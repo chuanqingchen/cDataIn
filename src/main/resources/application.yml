@@ -1,0 +1,33 @@
+###################  项目启动端口  ###################
+server:
+  port: ${server.port}
+
+management:
+    security:
+     enabled: false
+
+#management:
+#  port: 54001
+#  health:
+#    mail:
+#      enabled: false
+#  security: false
+
+#endpoints:
+#   health:
+#      sensitive: false
+
+##########################################################
+###################  开发环境的profile  ###################
+##########################################################
+
+dataWare:
+  datasource:
+    url: ${dataWare.datasource.url}
+    username: ${dataWare.datasource.username}
+    password: ${dataWare.datasource.password}
+    driverClassName: org.postgresql.Driver
+
+csv:
+  tmp:
+    dir: ${csv.tmp.dir}
